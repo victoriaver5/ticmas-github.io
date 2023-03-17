@@ -1,0 +1,175 @@
+html{
+  scroll-behavior: smooth;
+}
+
+
+body{
+  background-color: #c9ced3;
+  background-image: linear-gradient(to right, rgb(155, 164, 159) 0%, rgb(154, 162, 157) 50%, rgb(158, 192, 175) 100%);
+ 
+}
+    
+    
+    .myButton{
+        color: rgb(255, 255, 255); 
+        font-size: 15px; 
+        line-height: 15px; 
+        padding:5px; 
+        position: relative;
+        margin-left:10px; 
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 3px; 
+        font-family: Georgia, serif; 
+        font-weight: normal; 
+        font-style: normal; 
+        font-variant: normal; 
+        background-image: linear-gradient(to right, rgb(92, 102, 100) 0%, rgb(84, 92, 88) 50%, rgb(53, 130, 92) 100%); 
+        box-shadow: rgb(18, 17, 17) 2px 2px 5px 2px; border: 2px solid rgb(0, 0, 0); 
+        display: inline-block;}
+        .myButton:hover {
+        background:black; }
+        .myButton:active {
+        background: rgb(247, 244, 244);    
+    }
+
+
+
+    /* #fotodeperfil{ */
+        background-color:black;
+        width: 270px;
+        height: 270px;
+        position: absolute;
+        top: 150px;
+        right: 98px;
+        margin: 10px 10px 10px 10px;
+        padding: 5px 5px 5px 5px;
+        border: 15px 15px 15px 15px;
+        display: flex;
+    /* } */
+
+
+    h2{
+        font-size: 25px;
+        font-family: 'Bitter', serif;
+        margin: 10px 10px 10px 10px;
+        position: relative;
+        display: flex;
+        
+    }
+
+    h3{
+        font-size: 20px;
+        font-family: 'Bitter', serif;
+        position: relative;
+        top: 25px;
+        left: grid;
+
+    }
+
+    h4{
+     font-size: medium;
+     font-family: 'Bitter', serif;   
+    }
+
+    .al-costado{
+        float: right;
+        position: relative;
+        text-align: left;
+        margin: auto;
+        font-size: small;
+        font-family: 'Bitter', serif;
+    }
+
+    .piedepagina{
+        float: left;
+        position: relative;
+        text-align: left;
+        margin: auto;
+        font-size: small;
+        font-family: 'Bitter', serif;
+    }
+
+   
+   
+      
+.topheader{
+  position: relative;
+  background-image: linear-gradient(to right, rgb(92, 102, 100) 0%, rgb(84, 92, 88) 50%, rgb(53, 130, 92) 100%); 
+  box-shadow:  0 4px 5px rgb(41, 43, 43);
+  left: 0;  
+  top: 0;
+  width: 100%;
+  
+}
+
+.topnav{
+display: flex;
+justify-content: space-between;
+padding: 10px;
+max-width: 980px;
+margin: 0 auto;
+}
+
+.logo{
+  display: flex;
+  align-items:center;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(248, 247, 247);
+  text-decoration: none;
+}
+
+.logo img {
+  border-radius: 50%;
+}
+
+.menu-horizontal{
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px; 
+  justify-content: space-around;
+  
+}
+
+.menu-horizontal > li > a{
+  padding: 0px 15px;
+  display: block;
+  color:white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 50px;
+}
+.menu-horizontal > li:hover{
+  background-color: rgb(63, 188, 146);
+}
+
+.menu-vertical{
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: #000000;
+  
+}
+
+.menu-horizontal li:hover .menu-vertical{
+  display: block;
+}
+
+.menu-vertical li:hover{
+  background-color: rgb(65, 63, 63);
+}
+
+.menu-vertical li a {
+  display: block;
+  color: white;
+  padding: 15px 15px 15px 20px;
+  text-decoration: none;
+}
+
+
+    

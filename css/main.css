@@ -1,0 +1,180 @@
+
+.topheader{
+    background-image: linear-gradient(to right, rgb(92, 102, 100) 0%, rgb(84, 92, 88) 50%, rgb(53, 130, 92) 100%); 
+    box-shadow:  0 4px 5px rgb(41, 43, 43);  
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+.topnav{
+ display: flex;
+ justify-content: space-between;
+ padding: 10px;
+ max-width: 980px;
+ margin: 0 auto;
+}
+
+.logo{
+    display: flex;
+    align-items:center;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(248, 247, 247);
+    text-decoration: none;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.menu li{
+    padding: 0px 15px;
+
+}
+
+.menu ::after{
+    content: "";
+    background-color: #52e884;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 4px) ;
+    width: 100%;
+    height: 2px;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .menu a.selected::after,
+  .menu a:hover::after{
+    opacity: 0.8;
+  }
+
+  .menu a:hover{
+    color: black;
+  }
+
+
+.menu a{
+    color: rgb(255, 252, 252);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 50px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.open-menu,
+.close-menu{
+  display: none;
+}
+@media (max-width: 950px ){
+    
+  .menu{
+      flex-direction: column;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      align-items: center;
+      background-image: linear-gradient(to right, rgb(92, 102, 100) 0%, rgb(84, 92, 88) 50%, rgb(53, 130, 92) 100%); 
+      height: 100%;
+      overflow-y: auto;
+  
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0,3;
+  
+  }
+  
+  .menu li{
+      padding: 0px ;
+  }
+   
+  .menu a{
+      color: rgb(255, 252, 252);
+      justify-content: center;
+      line-height: 120px;
+      font-size: 30px;
+      cursor: pointer;
+      
+    
+      
+    }
+  
+    .open-menu,
+    .close-menu {
+      display: block;
+      border:none;
+      background: none;
+      cursor: pointer;}
+  
+      .close-menu{
+          align-self: flex-end;
+          padding: 20px 15px;
+      }
+  
+      .menu_opened{
+          opacity: 1;
+          pointer-events: all;
+      }
+  
+
+.menu ::after{
+  content: none;
+  
+}
+}
+
+    html{ 
+      scroll-behavior: smooth;
+    }
+
+    section[id]{
+      scroll-margin-top:70px ;
+    }
+
+    
+body{ 
+  background-color: #c9ced3;
+  background-image: linear-gradient(to right, rgb(155, 164, 159) 0%, rgb(154, 162, 157) 50%, rgb(158, 192, 175) 100%);
+  padding-top: 70px;
+}
+
+
+.horizontal-padding{
+   padding-left: 25px;
+   padding-right: 25px;
+   
+}
+
+.vertical-padding{
+padding-top: 25px;
+padding-bottom: 25px;
+}
+
+
+@media (min-width: 950px){
+  .horizontal-padding{
+    padding-left: 70px;
+    padding-right: 70px;
+    
+ }
+ 
+ .vertical-padding{
+ padding-top: 70px;
+ padding-bottom: 70px;
+ }
+}
